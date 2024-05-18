@@ -1,0 +1,11 @@
+* {
+  font-family: "Ranade";
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  position: relative;
+  /* gap: 40px; */
+}

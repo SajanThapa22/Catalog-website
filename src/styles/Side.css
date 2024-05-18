@@ -1,0 +1,163 @@
+.side {
+  gap: 15px;
+  color: #4a505c;
+  width: 260px;
+  display: flex;
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+.top {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 60px;
+}
+
+.menu {
+  z-index: 99999999;
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.side-panel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: 0.5s all ease-in;
+}
+
+.navigate {
+  display: grid;
+  gap: 8px;
+}
+
+.navigate-options {
+  display: flex;
+  gap: 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+.navigate-options:hover {
+  color: #2f6fed;
+  background-color: #f0f5ff;
+}
+
+.n-logo img {
+  fill: blue;
+}
+.n-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: red;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #f1f3f9;
+}
+
+.support {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.support-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.support-text {
+  padding: 0 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.support-child {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+}
+
+.switch-theme {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dark-mode {
+  width: 51px;
+  height: 28px;
+  border-radius: 20px;
+  background-color: #e1e6ef;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  border: 2px solid #e1e6ef;
+}
+
+.switch {
+  height: 100%;
+  aspect-ratio: 1/1;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.logout {
+  color: #e02d3c;
+  display: flex;
+  gap: 10px;
+  padding: 8px 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .side {
+    position: fixed;
+    z-index: 999;
+    width: 0px;
+    background-color: #fff;
+    outline: 1px solid #e1e6ef;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 100vh;
+  }
+  .menu {
+    display: block;
+  }
+  .logo {
+    justify-content: center;
+  }
+  .side-panel {
+    background-color: #ffffff;
+    height: 100vh;
+  }
+}
