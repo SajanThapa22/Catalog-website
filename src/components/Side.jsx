@@ -41,7 +41,7 @@ const Side = () => {
 
   window.addEventListener("resize", () => {
     if (window.innerWidth > 600) {
-      setIsToggled(false);
+      setIsToggled(true);
       console.log(isToggled);
     }
   });
@@ -54,7 +54,7 @@ const Side = () => {
     <>
       <div
         style={{
-          position: isToggled ? "absolute" : "fixed",
+          position: isToggled ? "fixed" : "absolute",
         }}
         onClick={handleToggle}
         className="menu"
@@ -64,7 +64,7 @@ const Side = () => {
       <div
         ref={ref}
         style={{
-          width: isToggled ? "0" : "260px",
+          width: isToggled ? "260px" : "0px",
         }}
         className="side"
       >

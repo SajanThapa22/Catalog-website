@@ -144,11 +144,9 @@
     position: fixed;
     z-index: 999;
     width: 0px;
-    background-color: #fff;
     outline: 1px solid #e1e6ef;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    height: 100vh;
   }
   .menu {
     display: block;
@@ -159,5 +157,6 @@
   .side-panel {
     background-color: #ffffff;
     height: 100vh;
+    width: 0px;
   }
 }
