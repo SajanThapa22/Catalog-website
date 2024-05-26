@@ -35,7 +35,7 @@ const Side = () => {
 
   const [width, setWidth] = useState(window.innerWidth);
 
-  const [isToggled, setIsToggled] = useState(false);
+  const [isToggled, setIsToggled] = useState(true);
 
   // useEffect(() => )
 
@@ -44,10 +44,14 @@ const Side = () => {
       setIsToggled(true);
       console.log(isToggled);
     }
+    if (window.innerHeight < 640) {
+      setIsToggled(false);
+    }
   });
 
   const handleToggle = () => {
     setIsToggled(!isToggled);
+    ref.current.style.width = "260px";
   };
 
   return (
