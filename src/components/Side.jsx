@@ -37,6 +37,7 @@ const Side = () => {
 
   const [isToggled, setIsToggled] = useState(true);
 
+  //event listener
   window.addEventListener("resize", () => {
     if (window.innerWidth >= 600) {
       setIsToggled(true);
