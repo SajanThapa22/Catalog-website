@@ -144,6 +144,7 @@
     position: fixed;
     z-index: 999;
     width: 0px;
+    transform: translateX(-100%);
     outline: 1px solid #e1e6ef;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;

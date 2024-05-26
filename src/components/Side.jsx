@@ -40,18 +40,16 @@ const Side = () => {
   // useEffect(() => )
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 600) {
+    if (window.innerWidth >= 600) {
       setIsToggled(true);
       console.log(isToggled);
-    }
-    if (window.innerHeight < 640) {
+    } else {
       setIsToggled(false);
     }
   });
 
   const handleToggle = () => {
     setIsToggled(!isToggled);
-    ref.current.style.width = "260px";
   };
 
   return (
@@ -69,6 +67,7 @@ const Side = () => {
         ref={ref}
         style={{
           width: isToggled ? "260px" : "0px",
+          transform: isToggled ? "translateX(0)" : "",
         }}
         className="side"
       >
