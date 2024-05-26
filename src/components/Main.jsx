@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Main.css";
 import UserAccount from "./UserAccount";
 import notification from "../assets/notification.png";
@@ -66,6 +66,8 @@ const tableDetails = [
 ];
 
 const Main = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
   return (
     <div className="main">
       <div className="search-notification">
@@ -101,7 +103,12 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="main-3rd">
+      <div
+        className="main-3rd"
+        style={{
+          flexDirection: width < 1340 ? "column" : "row",
+        }}
+      >
         <div className="metrics-card">
           <div className="icon-box-1">
             <img src={revenue} alt="" />
